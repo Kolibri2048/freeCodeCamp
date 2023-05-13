@@ -54,3 +54,56 @@ function sum(arr, n) {
     // Only change code above this line
   }
 
+// Other examples
+// Рекурсия
+let t = 0;
+function f1() {
+    t++;
+    console.log(t)
+    f1()
+    if(t === 100) return
+}
+
+// f1()
+
+// цикл
+
+function f2() {
+    let out = ''
+    for(let i = 0; i <= 100; i++) {
+        out += i + ' ';
+    }
+    console.log(out)
+}
+f2()
+
+// Тоэе самое но рейкурсией
+let i = 0
+let out = '';
+function f3() {
+    i++
+    out += i + ' ';
+    f3()
+    if(i >= 30) return
+}
+// console.log(out)
+
+
+// задача на лицо с низкой сот отв...
+
+function randomInt(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand)
+}
+
+let s1 = 0;
+function moneyRecursion() {
+    let m = randomInt(0, 100);
+    console.log('add: ' + m);
+    s1 += m;
+    console.log('sum: ' + s1);
+    if(s1 >= 300) return
+    moneyRecursion();
+
+}
+
