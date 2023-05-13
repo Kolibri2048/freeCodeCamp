@@ -5,7 +5,7 @@
 //   product of those elements. Using a for loop, you could do this:
 
 //Example
-let arr = [1, 2, 5 , 6]
+let arr = [0, 1, 2, 3, 4, 5]
 
 function multiply(arr, n) {
     let product = 1;
@@ -16,3 +16,41 @@ function multiply(arr, n) {
 }
 
 multiply(arr, 3)
+
+
+//Example 2 use recursion
+// However, notice that multiply(arr, n) == multiply(arr, n - 1) * arr[n - 1]. 
+// That means you can rewrite multiply in terms of itself and never need to use a loop.
+
+  function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+        console.log(arr, n - 1)
+        console.log(arr[n - 1])
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+
+  multiply(arr, 1)
+
+  // The recursive version of multiply breaks down like this. In the base case, where n <= 0, it returns 1. For larger values of n,
+//    it calls itself, but with n - 1. That function call is evaluated in the same way, calling multiply again until n <= 0. At this point,
+//    all the functions can return and the original multiply returns the answer.
+
+// Note: Recursive functions must have a base case when they return without calling the function again (in this example, when n <= 0), otherwise they can never finish executing.
+
+//Task
+// Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr.
+
+//Solution
+function sum(arr, n) {
+    // Only change code below this line
+    if(n <= 0) {
+      return 0
+    } else {
+      return sum(arr, n - 1) + arr[n - 1]
+    }
+    // Only change code above this line
+  }
+
