@@ -76,4 +76,4 @@ const increment = (number, value) => number + value;
 // Only change code above this line
 
 // Solution
-const increment = (number, value = 1) => number + value;
+const incrementSol = (number, value = 1) => number + value;
