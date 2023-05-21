@@ -28,3 +28,12 @@
 const createPerson = (name, age, gender) => ({name, age, gender})
 
 //Solution 2
+const createPersonSolTwo = (name, age, gender) => {
+    // Only change code below this line
+    return {
+      name,
+      age,
+      gender
+    };
+    // Only change code above this line
+  };
