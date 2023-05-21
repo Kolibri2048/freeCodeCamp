@@ -23,3 +23,8 @@
 //     };
 //     // Only change code above this line
 //   };
+
+//Solution 1 
+const createPerson = (name, age, gender) => ({name, age, gender})
+
+//Solution 2
