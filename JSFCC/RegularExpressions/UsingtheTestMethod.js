@@ -33,7 +33,7 @@
 // Примените регулярное выражение myRegexк строке, myStringиспользуя .test()метод.
 let myString = "Hello, World!";
 let myRegex = /Hello/;
-let result = myRegex.test(myString); // Change this line
+// let result = myRegex.test(myString); // Change this line
 
 
 // Совпадение с литеральными строками
