@@ -10,7 +10,7 @@
 
 // let repeatRegex = /Repeat/g;
 // testStr.match(repeatRegex);
-// И здесь matchвозвращает значение["Repeat", "Repeat", "Repeat"]
+// И здесь match возвращает значение["Repeat", "Repeat", "Repeat"]
 
 
 //task
