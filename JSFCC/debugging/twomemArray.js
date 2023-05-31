@@ -22,6 +22,9 @@ function zeroArray(m, n) {
   let matrix = zeroArray(3, 2);
   console.log(matrix);
   
+
+
+  
   //Soll 
   function zeroArray(m, n) {
     // Creates a 2-D array with m rows and n columns of zeroes
@@ -40,7 +43,7 @@ function zeroArray(m, n) {
     return newArray;
   }
   
-  let matrix = zeroArray(3, 2);
+  let matrixSol = zeroArray(3, 2);
   console.log(matrix);
 
   //Outpoot
