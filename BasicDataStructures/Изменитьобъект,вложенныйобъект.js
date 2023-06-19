@@ -20,5 +20,23 @@
 //  Чтобы присвоить значение 10свойству busyвложенного onlineStatusобъекта, мы используем запись через точку для ссылки на свойство:
 
 // nestedObject.data.onlineStatus.busy = 10;
+
+
+//task
 // Здесь мы определили объект userActivity, который включает в себя другой объект, вложенный в него. Установите значение onlineключа на 45.
 
+//sol
+let userActivity = {
+    id: 23894201352,
+    date: 'January 1, 2017',
+    data: {
+      totalUsers: 51,
+      online: 42
+    }
+  };
+  
+  // Only change code below this line
+  
+  // Only change code above this line
+  
+  console.log(userActivity.data.online = 45);
